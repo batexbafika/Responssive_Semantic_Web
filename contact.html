@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice NGO - Promoting Rural Education</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- incase boostrap 5 cdn fails, use local boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #3b2ee4;">
+     <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="h4 mb-0 text-primary fw-bold">
+                        <i class="fas fa-hands-helping me-2"></i>Nice NGO
+                    </h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <!-- Contact Header -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Get In Touch</h1>
+            <p class="lead">We'd love to hear from you. Reach out for partnerships, donations, or volunteer opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0 bg-dark text-light">
+                    <h2 class="mb-4 text-center mt-4">Send us a Message</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select class="form-select" id="subject">
+                                <option selected>Select a topic</option>
+                                <option value="donation">Make a Donation</option>
+                                <option value="volunteer">Volunteer Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter">
+                            <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg mb-4">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Contact Information</h2>
+                    <div class="mb-4">
+                        <h4 class="h5"><i class="fas fa-map-marker-alt text-primary me-2"></i> Our Address</h4>
+                        <p>123 Education Street, Knowledge City<br>Global Office, Worldwide</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="h5"><i class="fas fa-phone text-primary me-2"></i> Phone Number</h4>
+                        <p>+1 (234) 567-8900</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="h5"><i class="fas fa-envelope text-primary me-2"></i> Email Address</h4>
+                        <p>info@nicengo.com</p>
+                        <p>donations@nicengo.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="h5"><i class="fas fa-clock text-primary me-2"></i> Office Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM GMT</p>
+                        <p>Weekends: Limited support available</p>
+                    </div>
+                    
+                    <!-- Embedded Map (Placeholder) -->
+                    <div class="mt-5">
+                        <h4 class="h5 mb-3">Find Us</h4>
+                        <div class="border rounded p-3 bg-light text-center">
+                            <i class="fas fa-map-marked-alt fa-3x text-muted mb-3"></i>
+                            <p class="mb-0">Interactive map </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Stay Updated</h2>
+                    <p class="mb-4">Subscribe to our newsletter to receive updates on our projects and impact stories.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+ <!-- Footer -->
+    <footer class="text-white py-4 mt-5 footer-bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-primary">Nice NGO</h5>
+                    <p>Promoting education in rural communities worldwide.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-phone me-2"></i> +237 683759684</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@nicengo.com</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 - 2025 Nice NGO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Enable this Just in case there is slow/no network connection, use the local bootstrap.min.js -->
+    <!-- <script src="/js/bootstrap.min.js"></script> -->
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
